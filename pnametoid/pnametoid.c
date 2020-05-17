@@ -17,7 +17,8 @@ asmlinkage int sys_pnametoid (char* name)
 		   so sanh ten process nhap vo (name) voi task->comm */
 		if(strcmp(task->comm, name) == 0) 
 		{
-			/* task_pid_nr(task) tra ve "global" PIDs cua process hien 				   tai va con so nay la duy nhat trong toan bo he dieu hanh */
+			/* task_pid_nr(task) tra ve "global" PIDs cua process hien 
+			tai va con so nay la duy nhat trong toan bo he dieu hanh */
 			return (int)task_pid_nr(task); 
 		}	
 	}
