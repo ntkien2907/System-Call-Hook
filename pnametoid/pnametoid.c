@@ -14,7 +14,7 @@ asmlinkage long sys_pnametoid (char* name)
 	{
 		/* task->comm la mot mang char luu ten cua process 
 		   so sanh ten process nhap vo (name) voi task->comm */
-		printk("%s\t %s\n", tash->comm, name);
+		printk("%s\t %s\n", task->comm, name);
 		if(strcmp(task->comm, name) == 0) 
 		{
 			/* task_pid_nr(task) tra ve "global" PIDs cua process hien 
