@@ -7,11 +7,11 @@
 int main(int argc, char *argv[])
 {
 	char data[16];
-	printf("Enter your process's name: ");
+	printf("Enter process's name: ");
 	scanf("%s", data);
 	while((getchar()) != '\n');
 
 	long int pid = syscall(436, data);
-	printf("System call returns %ld\n", pid); 
+	printf("PID = %ld\n", pid); 
        	return 0;
 }
