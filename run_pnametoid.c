@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	scanf("%s", data);
 	while((getchar()) != '\n');
 
-	long int pid = syscall(436, data, 16);
+	long int pid = syscall(436, data);
 	printf("System call returns %ld\n", pid); 
        	return 0;
 }
