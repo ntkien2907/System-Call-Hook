@@ -19,7 +19,7 @@ asmlinkage long sys_pnametoid(char __user *data)
 	for_each_process(task) 
 	{
 		/* task->comm la mot mang char luu ten cua process */
-		/* so sanh ten process nhap vo (data) voi task->comm */
+		/* so sanh ten process nhap vo (name) voi task->comm */
 		if(strcmp(task->comm, buf) == 0) 
 		{
 			/* task_pid_nr(task) tra ve "global" PIDs cua process hien 

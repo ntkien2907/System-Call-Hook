@@ -20,9 +20,9 @@ asmlinkage long sys_pidtoname(int pid, char __user *buf, int len)
 			len_process_name = strlen(task->comm);
 			kernel_buf[len_process_name] = 0;
 
-			copy_to_user(buf, kernel_buf, len_process_name); 
+			copy_to_user(buf, kernel_buf, len_process_name - 1); 
 
-			if(len > len_process_name)
+			if(len - 1 >= len_process_name)
 				return 0;		
 
 			return len_process_name;			
