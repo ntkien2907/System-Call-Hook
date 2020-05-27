@@ -7,6 +7,7 @@
         ***./<tên chương trình>***
 
 **pnametoid**: Nhập tên process, trả về id (nếu có) hoặc trả về -1 (nếu không tìm thấy)
+
 **pidtoname**: Nhập id của process, tên process được lưu trong buffer
 
 #### HOOK
