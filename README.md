@@ -12,7 +12,7 @@
 **pidtoname**: Nhập id của process, tên process được lưu trong buffer
 
 ## HOOK
-#### Bắt đầu
+### Bắt đầu
 * Tại folder chứa file hook.c, gõ ***make all*** để tạo module hook.ko được tạo ra
 * Biên dịch test.c tạo file để chạy
         ***gcc test.c -o user_test***
@@ -22,6 +22,6 @@
 ##### Terminal 2:
 * Xóa dmesg cũ: ***sudo dmesg -C***
 * Mở dmesg mới: ***dmesg***
-#### Kết thúc
+### Kết thúc
 * Gỡ module khỏi kernel: ***sudo rmmod hook***
 * Xóa các file tạo ra trong quá trình compile: ***make clean***
