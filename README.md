@@ -14,7 +14,8 @@
 ## HOOK
 ### Bắt đầu
 * Tại folder chứa file hook.c, gõ ***make all*** để tạo module hook.ko
-* Biên dịch test.c tạo file để chạy
+* Biên dịch test.c tạo file để chạy:
+
         ***gcc test.c -o user_test***
 ##### Terminal 1:
 * Đưa module vào kernel: ***sudo insmod hook.ko***
