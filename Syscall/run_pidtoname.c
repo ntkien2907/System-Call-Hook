@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
 
 	num_bytes = syscall(318, pid, data, 16);
 
-	if(num_bytes >= 0)
-		printf("Process's name: %s\n", data);
-	else
+	if(num_bytes < 0)
 		printf("Process does not exist\n");
+	else
+		printf("Process's name: %s\n", data);
 	
        	return 0;
 }
