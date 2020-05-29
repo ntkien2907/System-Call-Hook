@@ -15,12 +15,9 @@
 
 ## HOOK
 ### Bắt đầu
-* Tại folder chứa file hook.c, tạo module hook.ko
+* Tạo module **hook.ko** và biên dịch **test.c**
 
         make all
-* Biên dịch test.c
-
-        gcc test.c -o user_test
 ##### Terminal 1:
 * Đưa module vào kernel
 
