@@ -22,7 +22,7 @@
 * Đưa module vào kernel
 
        sudo insmod hook.ko
-* Chạy file
+* Chạy file test
        
        ./user_test
 ##### Terminal 2:
