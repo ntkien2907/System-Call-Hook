@@ -9,7 +9,7 @@
 void main() {
 	int fd = open("file_test.txt", O_WRONLY | O_CREAT | O_APPEND);
 	if(fd >= 0) {
-		printf("Open File: Success");
+		printf("Open File: Success\n");
 		if(write(fd,"Hook System Call", 16) == 16)
 			printf("Write File: Success\n");
 		else
